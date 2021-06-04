@@ -1,16 +1,17 @@
 
 .lista-notas {
   background-color: var(--fundo);
-  flex-grow: 3;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-left: 24px;
   padding-top: 24px;
+  height: 100%;
+  min-width:50%;
 }
 .lista-notas_item {
   margin: 12px;
-  max-width: 240px;
-  max-height: 400px;
+  max-width: 200px;
   display: inline;
 }

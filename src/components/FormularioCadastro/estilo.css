@@ -20,12 +20,11 @@
 .form-cadastro_submit {
   margin-top: 15px;
   align-self: flex-end;
-  width: 30%;
+  width: 50%;
   height: 40px;
   background-color: var(--secundaria);
   color: white;
   font-weight: 400;
-  border-radius: 8px;
 }
 
 .form-cadastro_submit:active {
