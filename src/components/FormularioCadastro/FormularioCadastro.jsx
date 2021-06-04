@@ -15,6 +15,12 @@ class FormularioCadastro extends Component {
     this.texto = event.target.value;
   }
   _criarNota(event){
+    if(this.title.length == 0){
+      this.title = "Sem titulo";
+    }
+    if(this.texto.length == 0){
+      this.texto = "Não sei por que você faria isso mas criou uma notação vazia :/" 
+    }
     event.stopPropagation();
     event.preventDefault();
     this.props.criarNota(this.title, this.texto);

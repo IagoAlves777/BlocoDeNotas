@@ -1,0 +1,19 @@
+.cabecalho{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.cabecalho_img{
+  height: 50px;
+  width: 50px;
+}
+.cabecalho_titulo{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.cabecalho_a{
+  text-decoration: none;
+  color: rgb(60, 53, 53);
+}

@@ -1,13 +1,14 @@
 
 .lista-notas {
   background-color: var(--fundo);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: center;
   padding-left: 24px;
   padding-top: 24px;
-  height: 100%;
+  height: 100vh;
   min-width:50%;
 }
 .lista-notas_item {
