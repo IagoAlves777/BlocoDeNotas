@@ -1,0 +1,22 @@
+.listaDeCategorias{
+  display: flex;
+  width: 100%;
+}
+
+.listaDeCategorias_lista{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.listaDeCategorias_categoria{
+  display: flex;
+  color: white;
+  background-color: var(--secundaria);
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.listaDeCategorias_input{
+  width: 20%;
+}
