@@ -25,16 +25,22 @@ class App extends Component {
     this.setState(novoEstado)
   }
 
+  deletarNota(index){
+    let notas = this.state.notas;
+    notas.splice(index,1);
+    this.setState({notas:notas});
+  }
+
   adcionarCategoria(categoria){
     const novoArrayCategorias = [...this.state.categorias,categoria]
     const novoEstado = {...this.state, categorias:novoArrayCategorias}
     this.setState(novoEstado)
   }
 
-  deletarNota(index){
-    let notas = this.state.notas;
-    notas.splice(index,1);
-    this.setState({notas:notas});
+  deletarCategoria(index){
+    let categorias = this.state.categorias;
+    categorias.splice(index,1);
+    this.setState({categorias:categorias});
   }
 
   render() {
@@ -49,6 +55,7 @@ class App extends Component {
             <ListaDeCategorias 
               categorias={this.state.categorias} 
               adcionarCategoria={this.adcionarCategoria.bind(this)}
+              deletarCategoria={this.deletarCategoria.bind(this)}
             />
             <ListaDeNotas
               notas={this.state.notas} 

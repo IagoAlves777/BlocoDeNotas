@@ -1,0 +1,31 @@
+.categorias_button{
+    display: flex;
+    align-items: center;
+    
+    border: white;
+    background-color: white;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
+  
+.categorias_excluir{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  
+}
+  
+.categoria_button_img{
+    height: 12px;
+    width: 12px;
+}
+
+.categorias_categoria{
+    display: flex;
+    color: white;
+    background-color: var(--secundaria);
+    border-radius: 15px;
+    padding: 8px;
+}
