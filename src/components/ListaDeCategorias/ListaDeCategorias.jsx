@@ -3,6 +3,9 @@ import "./estilo.css";
 import Categoria from "../Categoria"
 
 class ListaDeCategorias extends Component {
+  componentDidMount(){
+    this.props.categorias.inscrever(this._novasCategorias);
+  }
   _handleEventoInput(e) {
     let valorCategoria = e.target.value;
     if (e.key == "Enter") {
@@ -21,7 +24,7 @@ class ListaDeCategorias extends Component {
           onKeyUp={this._handleEventoInput.bind(this)}
         />
         <ul className="listaDeCategorias_lista">
-          {this.props.categorias.map((categoria, index) => {
+          {this.props.categorias.categorias.map((categoria, index) => {
             return (
               <Categoria
                 categoria={categoria}
